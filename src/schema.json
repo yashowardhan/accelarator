@@ -1,0 +1,81 @@
+{
+  "title": "Form Heading Placeholder",
+  "description": "Form Description Paceholder",
+  "type": "object",
+  "required": ["quantity", "weight"],
+  "properties": {
+    "quantity": {
+      "type": "string",
+      "title": "Text Input Field",
+      "default": "Placeholder Text"
+    },
+    "weight": {
+      "type": "integer",
+      "title": "Number Input Field"
+    },
+
+    "requestor": {
+      "type": "string",
+      "title": "Textarea Field"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email Field",
+      "format": "email"
+    },
+    "uri": {
+      "type": "string",
+      "title": "URL Input Field",
+      "format": "uri"
+    },
+    "default": {
+      "type": "boolean",
+      "title": "Checkbox Option",
+      "description": "This is the checkbox-description"
+    },
+    "radio": {
+      "type": "boolean",
+      "title": "Radio Buttons",
+      "description": "This is the radio-description"
+    },
+
+    "select": {
+      "type": "boolean",
+      "title": "Select Box",
+      "description": "This is the select-description"
+    },
+    "multipleChoicesList": {
+      "type": "array",
+      "title": "Multiple Select Bar: Pick max two items",
+      "uniqueItems": true,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "enum": ["foo", "bar", "fuzz"]
+      }
+    },
+    "datetime": {
+      "type": "string",
+      "title": "Select Date and Time",
+      "format": "date-time"
+    },
+    "date": {
+      "type": "string",
+      "title": "Select Date",
+      "format": "date"
+    },
+    "file": {
+      "type": "string",
+      "format": "data-url",
+      "title": "Select Single file"
+    },
+    "files": {
+      "type": "array",
+      "title": "Multiple files",
+      "items": {
+        "type": "string",
+        "format": "data-url"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "requestor": {
+    "ui:widget": "textarea"
+  },
+  "radio": {
+    "ui:widget": "radio"
+  },
+  "select": {
+    "ui:widget": "select"
+  }
+}
