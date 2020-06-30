@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-json-grid": "^1.0.31",
     "react-json-table": "^0.1.1",
     "react-json-to-table": "^0.1.5",
     "react-scripts": "3.4.1",
