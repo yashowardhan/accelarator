@@ -1,5 +1,6 @@
 import React from 'react';
 import {Bar} from 'react-chartjs-2';
+import Header from './Header';
 
 const data = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -21,12 +22,13 @@ export default class Graph extends React.Component{
 
   render() {
     return (
-      <div>
+     
+      <div className="main-panel">
         <h2>Bar Example (custom size)</h2>
         <Bar
           data={data}
           width={100}
-          height={50}
+          height={20}
           options={{
             maintainAspectRatio: false
           }}

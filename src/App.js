@@ -1,14 +1,45 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Navigation from "reactstrap-json-nav";
+import { JsonToTable } from "react-json-to-table";
+import Graph from './Bargraph';
 import logo from "./logo.svg";
 import "./App.css";
+import Header from './Header';
+import Layout from "./Layout";
+import Sidebar from "./Sidebar";
+var schema = require("./schema.json");
+var uiSchema = require("./uiSchema.json");
+
+
+let items = [
+  { name: "Louise", age: 27, color: "red" },
+  { name: "Margaret", age: 15, color: "blue" },
+  { name: "Lisa", age: 34, color: "yellow" }
+];
 
 function App() {
   return (
-    <div class="container">
-      <div id="app" className="App">
-        {/* <h1>Iterating forms</h1> */}
-      </div>
-    </div>
+    // <Navigation json={json} bg="light" navbar-expand="lg" navbar-expand-lg />
+    <Router>
+       <Header/>
+       <Sidebar/>
+    <Switch>
+    <Route exact path="/">
+           <Layout />
+         </Route>
+         <Route path="/graph">
+           <Graph />
+         </Route>    
+       </Switch>
+ </Router>
+
+ 
   );
 }
 
