@@ -1,0 +1,72 @@
+{
+  "title": "Personal Information",
+  "type": "object",
+  "required": ["quantity", "weight"],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "title": "First Name",
+      "default": ""
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Last Name",
+      "default": ""
+    },
+    "address1": {
+      "type": "string",
+      "title": "Address Line 1",
+      "default": ""
+    },
+    "address2": {
+      "type": "string",
+      "title": "Address line 2",
+      "default": ""
+    },
+    "city": {
+      "type": "string",
+      "title": "City",
+      "default": ""
+    },
+    "state": {
+      "type": "string",
+      "title": "State",
+      "default": ""
+    },
+    "zip": {
+      "type": "number",
+      "title": "Zip Code",
+      "default": ""
+    },
+    "phone": {
+      "type": "number",
+      "title": "Phone Number",
+      "default": ""
+    },
+    "checkbox1": {
+      "type": "boolean",
+      "title": "Home"
+    },
+    "checkbox2": {
+      "type": "boolean",
+      "title": "Work"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email Address",
+      "format": "email"
+    },
+    "date": {
+      "type": "string",
+      "title": "Select Date of Birth",
+      "format": "date"
+    },
+    "type": "array",
+    "title": "A multiple choices list",
+    "Account type": {
+      "type": "string",
+      "enum": ["Checking", "Fixed Deposit", "Savings"]
+    },
+    "uniqueItems": "true"
+  }
+}
