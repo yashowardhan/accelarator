@@ -4,10 +4,9 @@ import "./Layout.css";
 import { Row , Col } from 'react-bootstrap';
 let json = [
     { name: "HOME", url: "/" },
-    { name: "ADMIT PATIENT", url: "/graph" },
-    { name: "MANAGE PATIENT", url: "https://github.com/reactstrap/reactstrap" },
-    { name: "DISCHARGE", url: "https://github.com/reactstrap/reactstrap" },
-    { name: "GENERATE REPORT", url: "https://github.com/reactstrap/reactstrap" },
+    { name: "ADMIT PATIENT", url: "/patient" },
+    { name: "BANK FORM", url: "/bank" },
+    { name: "GRAPH", url: "/graph" },
   ];
   const log = (type) => console.log.bind(console, type);
 export default class Sidebar extends Component {
