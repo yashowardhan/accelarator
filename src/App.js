@@ -13,7 +13,8 @@ import "./App.css";
 import Header from './Header';
 import Layout from "./Layout";
 import Sidebar from "./Sidebar";
-import BankFormScreen from './bank-form-screen/BankFormScreen'
+import BankFormScreen from './bank-form-screen/BankFormScreen';
+import PatientFormScreen from './patient-form-screen/PatientFormScreen'
 var schema = require("./schema.json");
 var uiSchema = require("./uiSchema.json");
 
@@ -39,6 +40,9 @@ function App() {
          </Route>  
          <Route path="/bank">
          <BankFormScreen /> 
+         </Route> 
+         <Route path="/patient">
+         <PatientFormScreen /> 
          </Route> 
           
        </Switch>
