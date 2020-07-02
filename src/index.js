@@ -49,7 +49,7 @@ ReactDOM.render(
         <JsonToTable json={items} />{" "}
       </Col>
       <Col xs={12} md={5}> */}
-    <BankFormScreen />
+    
     {/* </Col>
     </Row> */}
   </React.StrictMode>,
