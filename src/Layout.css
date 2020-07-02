@@ -2,6 +2,9 @@
 .padtop-0{
     padding-top: 0!important;
 }
+.mgtop50{
+    margin-top: 50px;
+}
 .horizontal-navbar{
     justify-content: flex-end;
     background-color: #136fbf;
