@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.form-style {
+  margin-left: 15%;
+}
+
+.form-bank {
+  padding-right: 30%;
+}
