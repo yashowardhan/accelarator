@@ -7,15 +7,17 @@ import App from "./App";
 import Navigation from "reactstrap-json-nav";
 import { JsonToTable } from "react-json-to-table";
 import BankFormScreen from "./bank-form-screen/BankFormScreen";
-import Graph from "./Bargraph";
+import Graph from './Bargraph';
+import Layout from './Layout';
+
 import * as serviceWorker from "./serviceWorker";
 
 var schema = require("./schema.json");
 var uiSchema = require("./uiSchema.json");
 
 let json = [
-  { name: "Nav List", url: "/components" },
-  { name: "Nav Item 1", url: "/BankFormScreen/" },
+  { name: "Nav List", url: "/graph/" },
+  { name: "Nav Item 1", url: "/components/" },
   { name: "Nav Item 2", url: "https://github.com/reactstrap/reactstrap" },
   { name: "Nav Item 3", url: "https://github.com/reactstrap/reactstrap" }
 ];
