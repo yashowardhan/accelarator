@@ -1,0 +1,102 @@
+{
+  "title": "Admit New Paitient",
+  "description": "Enter Paitient Detials",
+  "type": "object",
+  "required": ["name", "hospital"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Paitient Name",
+      "default": "Loreum Ispum"
+    },
+    "hospital": {
+      "type": "integer",
+      "title": "Hospital Number"
+    },
+    "age": {
+      "type": "integer",
+      "title": "Age"
+    },
+    "sex": {
+      "type": "string",
+      "title": "Sex",
+      "enum": ["Male", "Female"]
+    },
+    "district": {
+      "type": "string",
+      "title": "District",
+      "enum": [
+        "option #0",
+        "option #1",
+        "option #2",
+        "option #3",
+        "option #4",
+        "option #5",
+        "option #6",
+        "option #7",
+        "option #8",
+        "option #9",
+        "option #10"
+      ]
+    },
+    "others": {
+      "type": "string",
+      "title": "Others (Specifiy)"
+    },
+    "country": {
+      "type": "string",
+      "title": "Country",
+      "enum": [
+        "option #0",
+        "option #1",
+        "option #2",
+        "option #3",
+        "option #4",
+        "option #5",
+        "option #6",
+        "option #7",
+        "option #8",
+        "option #9",
+        "option #10"
+      ]
+    },
+    "tribe": {
+      "type": "string",
+      "title": "Tribe",
+      "default": "Runyakole"
+    },
+    "datetimeadmission": {
+      "type": "string",
+      "title": "Date and Time of Admission",
+      "format": "date-time"
+    },
+    "icuroom": {
+      "type": "integer",
+      "title": "ICU Room Number"
+    },
+    "icustay": {
+      "type": "integer",
+      "title": "Day of ICU Stay"
+    },
+    "source": {
+      "type": "string",
+      "title": "Source of Admission",
+      "default": "ICU"
+    },
+    "primaryteam": {
+      "type": "string",
+      "title": "Primary Team",
+      "default": "ICU"
+    },
+    "consultant": {
+      "type": "string",
+      "title": "ICU Consultant",
+      "default": "Dr. Ttendo"
+    },
+    "date": {
+      "type": "string",
+      "title": "Date Form Filled",
+      "format": "date"
+    }
+  }
+}
