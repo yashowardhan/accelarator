@@ -1,8 +1,8 @@
 import React from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Bar,Pie} from 'react-chartjs-2';
 import Header from './Header';
-
-const data = {
+import { Row , Col } from 'react-bootstrap';
+const Bardata = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -17,22 +17,50 @@ const data = {
   ]
 };
 
+const Piedata = {
+	labels: [
+		'Red',
+		'Blue',
+		'Yellow'
+	],
+	datasets: [{
+		data: [300, 50, 100],
+		backgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56'
+		],
+		hoverBackgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56'
+		]
+	}]
+};
+
 export default class Graph extends React.Component{
 //   displayName: 'BarExample',
 
   render() {
     return (
      
-      <div className="main-panel">
-        <h2>Bar Graph</h2>
-        <Bar
-          data={data}
+      <div className="main-panel mgtop50">
+        <Row>
+          <Col>
+          <Bar
+          data={Bardata}
           width={100}
           height={20}
           options={{
             maintainAspectRatio: false
           }}
         />
+          </Col>
+          <Col>
+           <Pie data={Piedata} />
+          </Col>
+        </Row>
+       
       </div>
     );
   }
