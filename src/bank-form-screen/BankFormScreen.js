@@ -14,6 +14,7 @@ const log = type => console.log.bind(console, type);
 export default class BankFormScreen extends React.Component {
   render() {
     return (
+      <div className="main-panel">
       <div className="form-bank">
         <Form
           className="form-style"
@@ -23,6 +24,7 @@ export default class BankFormScreen extends React.Component {
           <Grid data={data}></Grid>
           <button>Submit</button>
         </Form>
+      </div>
       </div>
     );
   }
