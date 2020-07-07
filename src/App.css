@@ -43,3 +43,14 @@
 .form-bank {
   padding-right: 30%;
 }
+.form-grouping {
+  background-color: aliceblue;
+  padding: 3%;
+}
+.submit {
+  padding: 1%;
+  margin-top: 2%;
+  width: 9rem;
+  background-color: #206fbf;
+  color: white;
+}
