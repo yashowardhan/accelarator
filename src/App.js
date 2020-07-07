@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import MenuBar from './sidebar-submenu'
+
 import Navigation from "reactstrap-json-nav";
 import { JsonToTable } from "react-json-to-table";
 import Graph from './Bargraph';
@@ -30,7 +32,8 @@ function App() {
     // <Navigation json={json} bg="light" navbar-expand="lg" navbar-expand-lg />
     <Router>
        <Header/>
-       <Sidebar/>
+       {/* <Sidebar/> */}
+       <MenuBar/>
     <Switch>
     <Route exact path="/">
            <Layout />
@@ -43,8 +46,7 @@ function App() {
          </Route> 
          <Route path="/patient">
          <PatientFormScreen /> 
-         </Route> 
-          
+         </Route>          
        </Switch>
  </Router>
 
