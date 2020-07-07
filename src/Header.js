@@ -12,9 +12,7 @@ let json = [
   { name: "EVENTS", url: "/events" }
 ];
 const log = type => console.log.bind(console, type);
-  
 
-const log = (type) => console.log.bind(console, type);
 export default class Header extends Component {
   render() {
     return (
