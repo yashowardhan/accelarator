@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MenuBar from "./sidebar-submenu";
+
 import Navigation from "reactstrap-json-nav";
 import { JsonToTable } from "react-json-to-table";
 import Graph from "./Bargraph";
@@ -19,7 +21,7 @@ var uiSchema = require("./uiSchema.json");
 let items = [
   { name: "Louise", age: 27, color: "red" },
   { name: "Margaret", age: 15, color: "blue" },
-  { name: "Lisa", age: 34, color: "yellow" },
+  { name: "Lisa", age: 34, color: "yellow" }
 ];
 
 function App() {
@@ -43,7 +45,7 @@ function App() {
         </Route>
         <Route path="/group">
           <GroupForm />
-          </Route>
+        </Route>
         <Route path="/events">
           <EventsFormScreen />
         </Route>
