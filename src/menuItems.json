@@ -1,0 +1,33 @@
+{
+    "data" : [
+      {
+          "name": "HOME",
+          "url": "/"
+      },
+      {
+        "name": "ADMIT PATIENT",
+        "url": "/patient"
+      },
+      {
+        "name": "BANK FORM",
+        "url": "/bank"
+      },
+      {
+        "name": "GRAPH",
+        "children": [
+          {
+            "name": "BAR",
+            "url": "/graph"
+          },
+          {
+            "name": "PIE",
+            "url": "/graph"
+          },
+          {
+            "name": "COLUMN",
+            "url": "/graph"
+          }
+        ]
+      }
+    ]
+  }
