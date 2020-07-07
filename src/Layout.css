@@ -1,0 +1,66 @@
+
+.padtop-0{
+    padding-top: 0!important;
+}
+.horizontal-navbar{
+    justify-content: flex-end;
+    background-color: #136fbf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1040;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+.horizontal-navbar li a{
+    color: #fff;
+}
+
+.vertical-navbar{
+    flex-flow: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto;
+    top:100px;
+    margin-top: 5px;;
+}
+.vertical-navbar li a{
+    background-color: #136fbf;
+    color:#fff;
+    padding: 15px!important;
+}
+.vertical-navbar li{
+    padding: 10px 0 10px 0px;
+}
+.vertical-navbar li:nth-child(1){
+    padding-top: 2px!important;
+}
+
+
+/***form style****/
+.form-style{
+    margin-top: 20px;;
+  }
+ .main-panel{
+    position: relative;
+    float: right;
+    width: calc(100% - 280px);
+    min-height: 100%;
+    overflow: auto;
+    background-color: #FAFCFE;
+    box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1);
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+ }
+
