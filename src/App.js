@@ -12,13 +12,14 @@ import BankFormScreen from "./bank-form-screen/BankFormScreen";
 import PatientFormScreen from "./patient-form-screen/PatientFormScreen";
 import GroupForm from "./grouping-form/GroupingForm";
 
+import EventsFormScreen from "./events-form-screen/EventsFormScreen";
 var schema = require("./schema.json");
 var uiSchema = require("./uiSchema.json");
 
 let items = [
   { name: "Louise", age: 27, color: "red" },
   { name: "Margaret", age: 15, color: "blue" },
-  { name: "Lisa", age: 34, color: "yellow" }
+  { name: "Lisa", age: 34, color: "yellow" },
 ];
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route path="/group">
           <GroupForm />
+          </Route>
+        <Route path="/events">
+          <EventsFormScreen />
         </Route>
       </Switch>
     </Router>

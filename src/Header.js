@@ -8,9 +8,13 @@ let json = [
   { name: "ADMIT PATIENT", url: "/patient" },
   { name: "BANK FORM", url: "/bank" },
   { name: "GRAPH", url: "/graph" },
-  { name: "GROUP-FORM", url: "/group" }
+  { name: "GROUP-FORM", url: "/group" },
+  { name: "EVENTS", url: "/events" }
 ];
 const log = type => console.log.bind(console, type);
+  
+
+const log = (type) => console.log.bind(console, type);
 export default class Header extends Component {
   render() {
     return (
