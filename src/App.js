@@ -1,16 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-=======
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import MenuBar from './sidebar-submenu'
-
->>>>>>> page-setup
 import Navigation from "reactstrap-json-nav";
 import { JsonToTable } from "react-json-to-table";
 import Graph from "./Bargraph";
@@ -37,7 +26,6 @@ function App() {
   return (
     // <Navigation json={json} bg="light" navbar-expand="lg" navbar-expand-lg />
     <Router>
-<<<<<<< HEAD
       <Header />
       <Sidebar />
       <Switch>
@@ -61,28 +49,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-=======
-       <Header/>
-       {/* <Sidebar/> */}
-       <MenuBar/>
-    <Switch>
-    <Route exact path="/">
-           <Layout />
-         </Route>
-         <Route path="/graph">
-           <Graph />
-         </Route>  
-         <Route path="/bank">
-         <BankFormScreen /> 
-         </Route> 
-         <Route path="/patient">
-         <PatientFormScreen /> 
-         </Route>          
-       </Switch>
- </Router>
-
- 
->>>>>>> page-setup
   );
 }
 
