@@ -6,7 +6,7 @@ import App from "./App";
 import Navigation from "reactstrap-json-nav";
 import * as serviceWorker from "./serviceWorker";
 
-var schema = require("./schema.json");
+var schema = require("./schemaPaitient.json");
 var uiSchema = require("./uiSchema.json");
 
 let json = [
@@ -28,7 +28,13 @@ ReactDOM.render(
       onChange={log("changed")}
       onSubmit={log("submitted")}
       onError={log("errors")}
-    />
+    >
+      {" "}
+      <div>
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+      </div>
+    </Form>
   </React.StrictMode>,
   document.getElementById("root")
 );
