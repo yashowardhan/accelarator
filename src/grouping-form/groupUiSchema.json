@@ -1,0 +1,107 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/name"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/personalData/properties/age"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/birthDate"
+        }
+      ]
+    },
+    {
+      "type": "Label",
+      "text": "Contact Details"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/contactData/phonenumber"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/contactData/email"
+        }
+      ]
+    },
+    {
+      "type": "Label",
+      "text": "Additional Information"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/personalData/properties/height"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/nationality"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/occupation",
+          "suggestion": [
+            "Accountant",
+            "Engineer",
+            "Freelancer",
+            "Journalism",
+            "Physician",
+            "Student",
+            "Teacher",
+            "Other"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "VerticalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/comments",
+          "options": {
+            "showSortButtons": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "VerticalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/lists",
+          "options": {
+            "elementLabelProp": "name",
+            "detail": {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/message"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/name"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

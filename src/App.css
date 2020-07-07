@@ -43,3 +43,31 @@
 .form-bank {
   padding-right: 30%;
 }
+.form-grouping {
+  background-color: aliceblue;
+  padding: 3%;
+}
+.submit {
+  padding: 1%;
+  margin-top: 2%;
+  width: 9rem;
+  background-color: #206fbf;
+  color: white;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-plus:before {
+  content: "\002b";
+}
+.glyphicon-remove:before {
+  content: "X";
+}
