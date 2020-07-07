@@ -13,7 +13,6 @@ import Sidebar from "./Sidebar";
 import BankFormScreen from "./bank-form-screen/BankFormScreen";
 import PatientFormScreen from "./patient-form-screen/PatientFormScreen";
 import GroupForm from "./grouping-form/GroupingForm";
-
 import EventsFormScreen from "./events-form-screen/EventsFormScreen";
 var schema = require("./schema.json");
 var uiSchema = require("./uiSchema.json");

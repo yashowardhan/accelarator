@@ -69,6 +69,8 @@
     height: 100vh;
     padding-top: 100px;
     padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
  }
 
 
@@ -144,6 +146,9 @@
 .MenuBar-links-2{
     text-decoration: none!important;
 }
+/* .MuiList-padding div{
+    margin-bottom: 20px;
+} */
   /* .vertical {
     height:auto;
     list-style:none;

@@ -13,6 +13,14 @@
         "url": "/bank"
       },
       {
+        "name": "GROUP FORM",
+        "url": "/group"
+      },
+      {
+        "name": "EVENTS",
+        "url": "/events"
+      },
+      {
         "name": "GRAPH",
         "children": [
           {
