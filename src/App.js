@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MenuBar from "./sidebar-submenu";
-
 import Navigation from "reactstrap-json-nav";
 import { JsonToTable } from "react-json-to-table";
 import Graph from "./Bargraph";
@@ -27,10 +26,15 @@ function App() {
   return (
     // <Navigation json={json} bg="light" navbar-expand="lg" navbar-expand-lg />
     <Router>
-      <Header />
+      {/* <Header /> */}
       {/* <Sidebar /> */}
-      <MenuBar />
-      <Switch>
+      <div className="horizontal-menu">
+        <MenuBar  />
+      </div>
+      <div className="vertical-menu">
+        <MenuBar  />
+      </div>
+     <Switch>
         <Route exact path="/">
           <Layout />
         </Route>
