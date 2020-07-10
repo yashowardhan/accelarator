@@ -39,6 +39,7 @@ return children.map( ( subOption ) => {
       if ( !subOption.children ) {
         return (
           <div key={ subOption.name }>
+            
             <ListItem 
               button 
               key={ subOption.name }>

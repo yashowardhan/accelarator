@@ -1,4 +1,6 @@
-
+body{
+    background-color: #FAFCFE;
+}
 .padtop-0{
     padding-top: 0!important;
 }
@@ -58,21 +60,41 @@
 .form-style{
     margin-top: 20px;;
   }
- .main-panel{
+.horizontal-menu + .main-panel{
+    position: relative;
+    float: right;
+    /* width: calc(100% - 280px); */
+    width:calc(100% - 190px);
+    min-height: 100%;
+    overflow: auto;
+    background-color: #FAFCFE;
+    /* box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1); */
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 150px;
+ }
+ .vertical-menu + .main-panel{
     position: relative;
     float: right;
     width: calc(100% - 280px);
     min-height: 100%;
     overflow: auto;
     background-color: #FAFCFE;
-    box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1);
+    /* box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1); */
     height: 100vh;
     padding-top: 100px;
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
  }
-
+.vertical-menu .MenuBar-list-1{
+    background-color: #126ebf!important;
+}
+.vertical-menu .MuiListItem-root{
+    color: #fff!important;
+}
 
   @-webkit-keyframes fadeIn {
     from { opacity: 0; }
@@ -118,7 +140,7 @@
       color:#000;
   }
 
-  .MuiDrawer-paper.MenuBar-list-1{
+  .vertical.menu .MuiDrawer-paper.MenuBar-list-1{
     flex-flow: column;
     list-style-type: none;
     margin: 0;
@@ -181,12 +203,15 @@
 }
 .horizontal-menu .MuiListItem-root{
     width: auto;
+    color: #fff;
 }
-
-.MuiDrawer-paper.MenuBar-list-1{
+.horizontal-menu .MenuBar-list-1{
+    width: auto!important;
+}
+/* .MuiDrawer-paper.MenuBar-list-1{
     overflow: visible!important;
     background-color: #126ebf!important;
-}
+} */
 /* .MuiList-padding div{
     margin-bottom: 20px;
 } */
